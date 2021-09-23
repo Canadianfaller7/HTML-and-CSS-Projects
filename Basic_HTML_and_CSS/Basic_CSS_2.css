@@ -1,0 +1,13 @@
+/*This .design class can be applied into an html file to make certain elements have these attributes look at html_5 in folder to see results  */
+.design { 
+    background-color: rgb(228, 211, 117);
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: right;
+    /*This makes it so there is a shadow in the text and the 5px makes 
+    it kinda blurred and the other 2 are just the size kind of how you want the shadow horizontal wise and vertical wise*/
+    text-shadow: 2px 2px 5px darkturquoise;
+    
+}
