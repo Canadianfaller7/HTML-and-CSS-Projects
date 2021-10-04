@@ -139,7 +139,7 @@ section {
 ==================================== */
 
 #home {
-    background: url(../images/129054.png); no-repeat/* the no repeat
+    background: url(../images/129054.png)  no-repeat/* the no repeat
     means to not repeat the background image since it is
     big enough to display only the 1 time. The 50 50 is saying
     show only have the file size since it is quite large */ 50% 50%;

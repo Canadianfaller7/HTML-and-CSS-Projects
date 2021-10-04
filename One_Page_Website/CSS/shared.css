@@ -43,7 +43,7 @@ h1::after {
     content: "";
     height: 2px;
     width: 150px;
-    background: #12e09b;
+    background:     #12e09b;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0. 0, 0, 0.5);
 }
@@ -142,11 +142,13 @@ section {
 
 /* This code messes with the background of the top part of the page
 this is where the new tork city picture is placed*/
+
+/* the no repeat means to not repeat the background image since it is
+big enough to display only the 1 time. The 50 50 is saying
+show only have the file size since it is quite large */ 
+
 #home {
-    background: url(../images/800px-New_Tork_City.png); no-repeat/* the no repeat
-    means to not repeat the background image since it is
-    big enough to display only the 1 time. The 50 50 is saying
-    show only have the file size since it is quite large */ 50% 50%;
+    background: url(../images/800px-New_Tork_City.png) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -ms-background-size: cover;
