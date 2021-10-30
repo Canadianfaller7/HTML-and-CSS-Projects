@@ -59,7 +59,7 @@ makes the background yellow*/
 
 /* This makes it so the block is not across the whole screen
 it narrows the container to a smaller look*/
-.pohto-container {
+.photo-container {
     text-align: center;
     margin: 15px auto;
     width: 300px;
