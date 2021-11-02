@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="./popupform.css">
+        <title>Basic HTML</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <!--HTML-->
+<body>
+    <h2>PopUp Form</h2>
+    <button class="open-button"
+    onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="myForm1">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email"
+            required>
+
+            <label for="pswd"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pswd"
+            required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <!--JS-->
+    <script>
+        function openForm() {
+            document.getElementById("myForm1").style.display="block";
+        }
+        function closeForm() {
+            document.getElementById("myForm1").style.display="none";
+        }
+    </script>
+</body>
+</html>

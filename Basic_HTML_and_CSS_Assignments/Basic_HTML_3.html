@@ -3,12 +3,57 @@
     <head>
        <link rel="stylesheet" type="text/css" href="Basic_CSS_1.css">
         <title>Basic HTML</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Basic HTML code</h1>
+        <h1 style="font-size: 8vw;">Basic HTML code</h1>
         <div style="color:rgb(36, 206, 149)">
         <h2>What do you love doing?</h2>
         <p style="color:blueviolet">This text is now centered and changed from blueviolet to skyblue because of CSS</p>
+
+         <!-- this is a button that you can click and it will run the jquery code above to display boxes 
+        with the colors applied below.-->
+        <button>Click to fade boxes in and out!</button>
+        <br><br>
+
+        <div id="div1" style="width: 80px; height: 80px; display: none; background-color: black;"></div><br>
+        <div id="div2" style="width: 80px; height: 80px; display: none; background-color: teal;"></div><br>
+        <div id="div3" style="width: 80px; height: 80px; display: none; background-color: cyan;"></div><br>
         </div>
+
+        <br><br>
+        
+        <script>
+            /* we are using jquery to make it so we have some buttons that we can fade in and out
+            that were created below in our div elements.*/
+            $(document).ready(function() {
+                $("button").click(function(){
+                    $("#div1").fadeToggle();
+                    $("#div2").fadeToggle("slow");
+                    $("#div3").fadeToggle(2000);
+                });
+            });
+
+               /* this is going to validate the phone number that will be put in from the form*/
+               function myFunction() {
+                let x = document.getElementById("fnumber").value;
+
+                if(isNaN(x) || x == "") {
+                    alert("Please input your phone number.")
+                    return false;
+                }
+            }
+        </script>
+        <br><br>
+       
+
+        <!-- this is a form for the function above to let you put in a phone number-->
+        <form name="myForm" action="" id="myForm">
+            <label for="fnumber">Phone Number:</label>
+            <input type="text" id="fnumber" name="fnumber" value="">
+            <br><br>
+            <input type="submit" value="Submit" onclick="myFunction()">
+        </form>
+        <br><br>
     </body>
 </html>
