@@ -457,4 +457,8 @@ button:hover, .form-container .btn:hover {
 }
 /***** End of Contact Form Styling *****/
 
+/******** List *********/
 
+.lst {
+    font-size:large;
+}

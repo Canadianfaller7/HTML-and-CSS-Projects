@@ -18,6 +18,7 @@
       <a href="#Slideshow">Slideshow</a>
       <a href="#About">About</a>
       <a href="#GitHub">GitHub</a>
+      <a href="#Projects">Projects</a>
       <a onclick="openForm()" ondblclick="closeForm()" href="#Contact">Contact</a>
     </div>
 
@@ -66,7 +67,7 @@
           <!-- Slide 2 of 6 -->
           <div class="mySlides fade">
             <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="">
-            <div class="text">I am a full-stack software developer,<br>
+            <div class="text">I am a junior full-stack software developer,<br>
             trained in:<br>HTML, CSS, JavaScript,</div>
           </div>
           <!-- Slide 3 of 6 -->
@@ -75,10 +76,10 @@
             <div class="text">back end development, databases and SQL.</div>
           </div>
           <!-- Slide 4 of 6 -->
-          <!-- <div class="mySlides fade">
-            <img class="Slideshow_Images" src="./images/me.png" alt="Picture of myself">
-            <div class="text">I am available to assist you on your projects!</div>
-          </div> -->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" id="change"src="./images/Python.png" alt="Python Logo">
+            <div class="text">Python and Django Framework</div>
+          </div>
           <!-- Slide 5 of 6 -->
           <!-- <div class="mySlides fade">
             <img class="Slideshow_Images" src="./images/me.png" alt="Picture of myself">
@@ -102,8 +103,8 @@
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
           <span class="dot" onclick="currentSlide(4)"></span> 
-          <!-- <span class="dot" onclick="currentSlide(5)"></span> 
-          <span class="dot" onclick="currentSlide(6)"></span>  -->
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <!--<span class="dot" onclick="currentSlide(6)"></span>  -->
           <!-- add more spans once have more slides as well-->
         </div>
       </div>
@@ -143,8 +144,7 @@
         <h1>LinkedIn</h1>
         <p class="center"> 
           You can view my LinkedIn profile here:
-          <br>
-        <p class="center"><a href="https://www.linkedin.com/in/spencer-merrill-a6457a67/" target="_blanc">My LinkedIn</a>
+        <p class="center"><a href="https://www.linkedin.com/in/spencer-merrill-a6457a67/" target="_blank">My LinkedIn</a>
         </p>
         </p>
       </div>
@@ -153,6 +153,32 @@
         <a href="https://github.com/Canadianfaller7" target="_blank"><img class="github" src="./images/GitHub.png" alt="GitHub Logo"></a>   
       </div>
     </div>
+    <!-- Projects Section-->
+    <div class="Row" id="Projects">
+      <!--Left Column-->
+      <div class="Column_2">
+        <img src="./images/projects.png" alt="Project">
+      </div>
+      <!--Right Column-->
+      <div class="Column_1">
+        <h1>Projects</h1>
+        <p>Here are links to projects that I have made throughout my bootcamp and by myself! <br><br> For more, please refer to the Github link above.
+        <ul class="lst">
+          <li><a href="https://github.com/Canadianfaller7/JavaScript-Projects/tree/main/Calculator%20app" target="_blank">JavaScript web calculator</a></li>
+          <li><a href="https://github.com/Canadianfaller7/JavaScript-Projects/tree/main/Tic%20Tac%20Toe%20Project" target="_blank">JavaScript TicTacToe app</a></li>
+          <li><a href="https://github.com/Canadianfaller7/Python-Projects/tree/main/Phonebook%20App" target="_blank">Python tkinter Phonebook App</a></li>
+          <li><a href="https://github.com/Canadianfaller7/Python-Projects/tree/main/File%20Transfer" target="_blank">Python tkinter File Transfer App</a></li>
+          <li><a href="https://github.com/Canadianfaller7/Python-Projects/tree/main/DjangoCheckbook" target="_blank">Django full-stack Checkbook web app</a></li>
+          <li><a href="https://github.com/Canadianfaller7/Clima-sm-replica" target="_blank">ios Weather app</a></li>
+          <li><a href="https://github.com/Canadianfaller7/magic-8-ball-sm-replica" target="_blank">ios Pokemon Magic-8-ball app</a></li>
+          <li><a href="https://github.com/Canadianfaller7/HTML-and-CSS-Projects/tree/main/Movie%20Theater%20Site" target="_blank">HTML & Bootstrap Movie Theater Site</a></li>
+        </ul>
+          <br>
+          <br>
+        </p>
+      </div>
+    </div>
+    
 
     <!--Contact Section-->
     <div id="Contact">
@@ -166,10 +192,10 @@
               <input type="text" placeholder="Please enter your name here">
             <label for="phone"><b>Phone</b></label>
               <input type="text" placeholder="Please enter your phone number here">
-            <label for="email">Email</label>
+            <label for="email"><b>Email</b></label>
               <input type="text" id="email" placeholder="Please enter your email here">
-            <label for="message">Message</label>
-              <input type="text" id="message" name="message" placeholder="Please write your message here">
+            <label for="message"><b>Message</b></label>
+              <input type="text" id="message" name="message" placeholder="Please leave your number or email here along with a message">
             
             <button type="submit" class="btn">SUBMIT</button>
             <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
