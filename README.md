@@ -5,5 +5,3 @@ This folder contains the Projects and little side projects I have made and creat
 ## My Portfolio
 * This is a portfolio website that tells a little bit more about me. It is created with HTML, CSS, and JavaScript. It contains a Navbar, Images, Columns, a form, and much more.
 
-## Movie Theater site
-* This page is an example homepage of a movie theater that is styled using Bootstrap 4. It contains the following, but isn't limited to Navbar, cards, form, jumbotron, and buttons. 
